@@ -37,14 +37,15 @@ jobs:
       uses: parasoft/run-cpptest-action@0.2.4-alpha
       with:
         workingDir: 'C:\tmp'
-        installDir: 'D:\parasoft_cpptest_standard-2021.1.0'
+        installDir: 'D:\parasoft_cpptest_professional-2021.1.0'
         input: cpptest.bdf
         testConfig: 'builtin://Effective C++'
-        compilerConfig: 'gcc_7-64'
-        reportFormat: xml,html,custom
+       # compilerConfig: 'gcc_7-64'
+       # reportFormat: xml,html,custom
         additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
-        reportDir: reports_CLI
-        commandLinePattern: ${cpptestcli} -compiler "${compilerConfig}" -config "${testConfig}" -property report.format=${reportFormat} -report "${reportDir}" -input "${input}" ${additionalParams}
+        reportDir: reports_CLI_pro
+        commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
+      #  commandLinePattern: ${cpptestcli} -compiler "${compilerConfig}" -config "${testConfig}" -property report.format=${reportFormat} -report "${reportDir}" -input "${input}" ${additionalParams}
       # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
       # with:
       #   reportFormat: xml,html,custom
@@ -54,11 +55,11 @@ jobs:
     - name: Upload results (SARIF)
       uses: github/codeql-action/upload-sarif@v1
       with:
-        sarif_file: reports_CLI/report.sarif
+        sarif_file: reports_CLI_pro/report.sarif
     
     # Uploads an archive that includes all report files (.xml, .html, .sarif).
     - name: Archive reports
       uses: actions/upload-artifact@v2
       with:
         name: Static analysis reports
-        path: reports_CLI/*.*
+        path: reports_CLI_pro/*.*
