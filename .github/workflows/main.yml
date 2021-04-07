@@ -43,6 +43,7 @@ jobs:
        # compilerConfig: 'gcc_7-64'
        # reportFormat: xml,html,custom
        # additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
+        additionalParams: '-localsettings D:\0.0.0_Sprints\config_pro_sarif.properties'
         reportDir: reports_CLI_pro
         commandLinePattern: '${cpptestcli} -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
       #  commandLinePattern: ${cpptestcli} -compiler "${compilerConfig}" -config "${testConfig}" -property report.format=${reportFormat} -report "${reportDir}" -input "${input}" ${additionalParams}
