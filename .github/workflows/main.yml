@@ -36,6 +36,7 @@ jobs:
       # Use the 'run-cpptest-action' GitHub action.
       uses: parasoft/run-cpptest-action@0.2.4-alpha
       with:
+        workingDir: 'C:\tmp'
         installDir: 'D:\parasoft_cpptest_standard-2021.1.0'
         input: cpptest.bdf
         testConfig: 'builtin://Effective C++'
