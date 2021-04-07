@@ -37,6 +37,7 @@ jobs:
       uses: parasoft/run-cpptest-action@0.2.4-alpha
       with:
         installDir: 'D:\parasoft_cpptest_standard-2021.1.0'
+        input: cpptest.bdf
       # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
       # with:
       #   reportFormat: xml,html,custom
