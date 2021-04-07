@@ -1,6 +1,6 @@
-------- cpptestscan v.10.5.1.20201201B2759 (cpptesttrace) -------
-working_dir=E:\Examples\C++test_Std_github\cpp_examples_A
-project_name=ATM
+------- cpptestscan v.10.5.1.20210406B2914 (cpptesttrace) -------
+working_dir=C:\actions-runner\_work\cpp_examples_A\cpp_examples_A
+project_name=cpp_examples_A
 arg=C:\cygwin64\bin\g++.exe
 arg=-g
 arg=-Iinclude
@@ -8,9 +8,9 @@ arg=-o
 arg=obj/ATM.o
 arg=-c
 arg=ATM.cxx
-------- cpptestscan v.10.5.1.20201201B2759 (cpptesttrace) -------
-working_dir=E:\Examples\C++test_Std_github\cpp_examples_A
-project_name=ATM
+------- cpptestscan v.10.5.1.20210406B2914 (cpptesttrace) -------
+working_dir=C:\actions-runner\_work\cpp_examples_A\cpp_examples_A
+project_name=cpp_examples_A
 arg=C:\cygwin64\bin\g++.exe
 arg=-g
 arg=-Iinclude
@@ -18,9 +18,9 @@ arg=-o
 arg=obj/Bank.o
 arg=-c
 arg=Bank.cxx
-------- cpptestscan v.10.5.1.20201201B2759 (cpptesttrace) -------
-working_dir=E:\Examples\C++test_Std_github\cpp_examples_A
-project_name=ATM
+------- cpptestscan v.10.5.1.20210406B2914 (cpptesttrace) -------
+working_dir=C:\actions-runner\_work\cpp_examples_A\cpp_examples_A
+project_name=cpp_examples_A
 arg=C:\cygwin64\bin\g++.exe
 arg=-g
 arg=-Iinclude
@@ -28,9 +28,9 @@ arg=-o
 arg=obj/BaseDisplay.o
 arg=-c
 arg=BaseDisplay.cxx
-------- cpptestscan v.10.5.1.20201201B2759 (cpptesttrace) -------
-working_dir=E:\Examples\C++test_Std_github\cpp_examples_A
-project_name=ATM
+------- cpptestscan v.10.5.1.20210406B2914 (cpptesttrace) -------
+working_dir=C:\actions-runner\_work\cpp_examples_A\cpp_examples_A
+project_name=cpp_examples_A
 arg=C:\cygwin64\bin\g++.exe
 arg=-g
 arg=-Iinclude
@@ -38,9 +38,9 @@ arg=-o
 arg=obj/Account.o
 arg=-c
 arg=Account.cxx
-------- cpptestscan v.10.5.1.20201201B2759 (cpptesttrace) -------
-working_dir=E:\Examples\C++test_Std_github\cpp_examples_A
-project_name=ATM
+------- cpptestscan v.10.5.1.20210406B2914 (cpptesttrace) -------
+working_dir=C:\actions-runner\_work\cpp_examples_A\cpp_examples_A
+project_name=cpp_examples_A
 arg=C:\cygwin64\bin\g++.exe
 arg=-g
 arg=-Iinclude
