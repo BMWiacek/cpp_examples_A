@@ -14,7 +14,7 @@ void ATM::viewAccount(int accountNumber, string password)
         myDisplay->showInfoToUser("Invalid account");
     }
 }
-//bmw test
+
 void ATM::fillUserRequest(UserRequest request, double amount)
 {
     if (myCurrentAccount)
