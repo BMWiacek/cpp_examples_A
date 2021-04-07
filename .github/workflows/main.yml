@@ -38,6 +38,7 @@ jobs:
       with:
         installDir: 'D:\parasoft_cpptest_standard-2021.1.0'
         input: cpptest.bdf
+        testConfig: 'builtin://MISRA C 2012'
       # Uncomment if you are using C/C++test 2020.2 to generate a SARIF report:
       # with:
       #   reportFormat: xml,html,custom
