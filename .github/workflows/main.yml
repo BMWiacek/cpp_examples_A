@@ -38,7 +38,7 @@ jobs:
     #  with:
     #    installDir: 'D:\parasoft_cpptest_standard-2020.2.0RF'
     #    input: cpptest.bdf
-    #    testConfig: 'builtin://Effective C++'
+    #    testConfig: 'builtin://MISRA C 2012'
     #    compilerConfig: 'gcc_7-64'
     #    reportFormat: xml,html,custom
     #    additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
@@ -57,7 +57,7 @@ jobs:
     # C/C++test will create a new project based on the provided .bdf file.
         additionalParams: '-localsettings config.properties'
         reportDir: reports_CLI_pro
-        testConfig: 'builtin://Effective C++'
+        testConfig: 'builtin://MISRA C 2012'
         input: cpptest.bdf
         commandLinePattern: 'cpptestcli.exe -data ../workspace -config "${testConfig}" -report "${reportDir}" -bdf "${input}" ${additionalParams}'
 
