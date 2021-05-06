@@ -59,7 +59,7 @@ jobs:
         reportDir: reports_CLI_pro
         testConfig: 'builtin://Effective C++'
         input: cpptest.bdf
-        commandLinePattern: 'cpptestcli.exe -config "${testConfig}" -report "${reportDir}" -bdf "${input}"'
+        commandLinePattern: 'D:\parasoft_cpptest_parasoft-2020.2.0RF\cpptestcli.exe -config "${testConfig}" -report "${reportDir}" -bdf "${input}"'
 
     # Uploads analysis results in the SARIF format, so that they are displayed as GitHub code scanning alerts.
     - name: Upload results (SARIF)
