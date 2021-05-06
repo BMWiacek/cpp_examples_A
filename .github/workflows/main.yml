@@ -34,9 +34,9 @@ jobs:
     # Runs code analysis with C/C++test.
     - name: Run C/C++test
       # Use the 'run-cpptest-action' GitHub action.
-      uses: parasoft/run-cpptest-action@1.0.0
+      uses: parasoft/run-cpptest-action@1.0.1
       with:
-        installDir: 'D:\parasoft_cpptest_standard-2021.1.0.20210412B3133-win32.x86_64'
+        installDir: 'D:\parasoft_cpptest_standard-2020.2.0RF'
         input: cpptest.bdf
         testConfig: 'builtin://Effective C++'
         compilerConfig: 'gcc_7-64'
