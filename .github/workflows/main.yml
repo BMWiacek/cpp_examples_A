@@ -36,10 +36,10 @@ jobs:
       # Use the 'run-cpptest-action' GitHub action.
       uses: parasoft/run-cpptest-action@1.0.1
       with:
-        installDir: 'D:\parasoft_cpptest_standard-2020.2.0RF'
+        installDir: 'D:\parasoft_cpptest_standard-2021.1.0RF'
         input: cpptest.bdf
-        testConfig: 'builtin://MISRA C 2012'
-        compilerConfig: 'gcc_7-64'
+        testConfig: 'builtin://Effective C++'
+        compilerConfig: 'gcc_9-64'
         reportFormat: xml,html,custom
         additionalParams: '-property report.custom.extension=sarif -property report.custom.xsl.file=${PARASOFT_SARIF_XSL}'
         reportDir: reports_CLI
@@ -73,3 +73,4 @@ jobs:
       with:
         name: Static analysis reports
         path: reports_CLI/*.*
+      
